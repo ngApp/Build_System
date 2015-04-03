@@ -1,0 +1,47 @@
+#chart {
+    min-height:100px;
+}
+#chart svg {
+    margin:10px;
+}
+ul.order {
+    list-style-type: none;
+    position:absolute;
+    right:25px;
+}
+ul.order li {
+    line-height:30px;
+}
+ul.order li span {
+    width:18px;
+    height:18px;
+    display:inline-block;
+    vertical-align: middle;
+}
+ul.order li:nth-child(1) span {
+    background-color:#fff4d2
+}
+ul.order li:nth-child(2) span {
+    background-color:#fecc88
+}
+ul.order li:nth-child(3) span {
+    background-color:#ff8000
+}
+
+@media (min-width:361px) and (max-width:768px) {
+    ul.order {
+        top:3px;
+    }
+    ul.order li {
+        display:inline-block;
+    }
+}
+
+@media (max-width:480px) {
+    ul.order {
+        position:static;
+    }
+    ul.order li {
+        display:block;
+    }
+}

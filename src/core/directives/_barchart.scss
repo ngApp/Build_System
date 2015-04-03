@@ -1,0 +1,38 @@
+/* ----- BarChart ----- */
+
+at-barchart {
+    display: block;
+}
+
+.bar{
+    .qty {
+        fill: #fff4d2;
+        stroke: white;
+    }
+    .qty_placed {
+        fill: #fecc88;
+        stroke: white;
+    }
+    .qty_executed {
+        fill: #ff8000;
+        stroke: white;
+    }
+    .qty_text {
+        text-anchor: end
+    }
+    .qty_line {
+        stroke-width: 1;
+        stroke: #fecc88;
+    }
+}
+
+.axis text {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
