@@ -13,7 +13,7 @@ $ npm start
 ```
 
 ## Quick Start
-Clone this repo and run the content locally:
+Back to the main folder and run:
 ```bash
 $ npm install
 $ bower install
@@ -23,6 +23,8 @@ $ gulp serve-dev
 - `bower install` will install the required client-side libraries under `bower_components`.
 - `gulp serve-dev` will serve up the Angular application in a browser window.
 
+
+Click on create button to create the numer of build scenarios, then based on Socket Server Send Events the progress bar is updated. Once all tasks are completed, you can delete the contents and try again creating another set of builds by clicking the create button.
 ##### Note
 Make sure you have "bower_components\socket.io-client\bower.json" file, which was not available in original repo.
 
