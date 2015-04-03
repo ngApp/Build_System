@@ -1,0 +1,47 @@
+<section id="dashboard-view" class="container-fluid">
+
+    <div class="row row-margin-top">
+        <div class="col-xs-7 btn-group">
+            <button type="button" class="btn btn-default btn-responsive" data-toggle="modal" data-target="#tradeModal">Create</button>
+            <button type="button" class="btn btn-default btn-responsive" ng-click="vm.deleteAll()">Delete All</button>
+            <button type="button" class="btn btn-default btn-responsive" ng-click="vm.refresh()">Refresh</button>
+        </div>
+         <div class="col-xs-5">
+            <div class="pull-right btn-group">
+                <button type="button" class="btn btn-default" ng-click="vm.go('dashboard.table')">
+                  <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-default" ng-click="vm.go('dashboard.chart')">
+                  <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="modal fade" id="tradeModal" tabindex="-1" role="dialog" aria-labelledby="tradeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="tradeModalLabel">Create Multiple Builds</h4>
+                </div>
+                <form name="trade" ng-submit="vm.submitBuild()">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="qty">Enter number of builds</label>
+                            <input name="qty" type="number" min="1" class="form-control" ng-model="vm.qty" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" ng-disabled="trade.$invalid">Create</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div ui-view></div>
+    
+</section>
