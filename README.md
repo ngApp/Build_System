@@ -24,7 +24,7 @@ $ gulp serve-dev
 - `gulp serve-dev` will serve up the Angular application in a browser window.
 
 
-Click on create button to create the numer of build scenarios, then based on Socket Server Send Events the progress bar is updated. Once all tasks are completed, you can delete the contents and try again creating another set of builds by clicking the create button.
+Click on create button to create the numer of build scenarios, then based on Socket Server Send Events the progress bar is updated. Once all tasks are completed, you can delete the contents and try again creating another set of builds by clicking the create button. Click on the chart icon on top right corner to get the chart implementation of the same data, using the library d3.
 ##### Note
 Make sure you have "bower_components\socket.io-client\bower.json" file, which was not available in original repo.
 
