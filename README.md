@@ -3,7 +3,14 @@ A system to check build status
 
 This is a client web application used for mimicking a Build System in its best way possible :). I used a trader desktop server to supply me with mock data and Server Send Events.
 
+Clone this repo or Download the zip and extract the contents:
 
+## Lets Start the server
+Navigate to trader_server and run
+```bash
+$ npm install
+$ npm start
+```
 
 ## Quick Start
 Clone this repo and run the content locally:
